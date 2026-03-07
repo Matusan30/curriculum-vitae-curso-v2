@@ -5,3 +5,8 @@ body {
 .mi-logo path {
     fill: #ffc107;
 }
+
+.foto-facha {
+    border-radius: 50%;
+    height: 400px;
+}
