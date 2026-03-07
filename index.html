@@ -1,24 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Portfolio v2</title>
 </head>
+
 <body>
 
     <!-- NavBar -->
+    <section id="nav-bar">
+        <div class="container-fluid">
+            <header
+                class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
+                <div class="col-md-3 mb-2 mb-md-0 ml-5 px-3 py-2">
+                    <a href="/" class="d-inline-flex link-body-emphasis text-decoration-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="35" fill="currentColor"
+                            class="bi bi-brilliance mi-logo" viewBox="0 0 16 16">
+                            <path
+                                d="M8 16A8 8 0 1 1 8 0a8 8 0 0 1 0 16M1 8a7 7 0 0 0 7 7 3.5 3.5 0 1 0 0-7 3.5 3.5 0 1 1 0-7 7 7 0 0 0-7 7" />
+                        </svg>
+                    </a>
+                </div>
+                <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                    <li><a href="#" class="nav-link px-4 link-secondary"><strong>Home</strong></a></li>
+                    <li><a href="#" class="nav-link px-4 link-secondary"><strong>Skills</strong></a></li>
+                    <li><a href="#" class="nav-link px-4 link-secondary"><strong>Projects</strong></a></li>
+                    <li><a href="#" class="nav-link px-4 link-secondary"><strong>Contact</strong></a></li>
+                </ul>
+                <div class="col-md-3 text-end px-3">
+                    <button type="button" class="btn btn-warning"><strong>Download CV</strong></button>
+                </div>
+            </header>
+        </div>
+    </section>
 
     <!-- Main con Foto -->
+    <section id="first-photo">
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="./img/foto-facha.png" class="d-block mx-lg-auto img-fluid foto-facha" alt="foto-facha"
+                        loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <p class="display-6 fw-bold text-light-emphasis">Hola soy</p>
+                    <h1 class="display-1 fw-bold text-light lh-1 mb-3">Mateo Montovani</h1>
+                    <p class="h5 fw-bold text-light-emphasis my-3">Un chico re piola de 19 años que estudia Ingeniería
+                        en Sistemas en la UTN FRC</p>
+                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                        <button type="button" class="btn fw-bold btn-warning btn-md px-4 me-md-2">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Skills -->
+    <!-- Estoy teniendo problemas para insertar y alinear los SVGs de los logos -->
+    <section id="skills">
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom display-6 fw-bold text-light">Skills</h2>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                    <svg height="110" fill="#212529" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg"
+                        class="bi me-3">
+                        <path
+                            d="M30.428 14.663l-13.095-13.094c-0.35-0.349-0.833-0.565-1.367-0.565s-1.017 0.216-1.367 0.565l0-0-2.713 2.718 3.449 3.449c0.22-0.077 0.473-0.121 0.737-0.121 1.269 0 2.297 1.028 2.297 2.297 0 0.269-0.046 0.526-0.131 0.766l0.005-0.016 3.322 3.324c0.222-0.079 0.479-0.125 0.746-0.125 1.268 0 2.296 1.028 2.296 2.296s-1.028 2.296-2.296 2.296c-1.268 0-2.296-1.028-2.296-2.296 0-0.313 0.063-0.611 0.176-0.883l-0.006 0.015-3.11-3.094v8.154c0.764 0.385 1.279 1.163 1.279 2.061 0 1.27-1.030 2.3-2.3 2.3s-2.3-1.030-2.3-2.3c0-0.634 0.256-1.207 0.671-1.623l-0 0c0.211-0.211 0.462-0.382 0.741-0.502l0.015-0.006v-8.234c-0.842-0.354-1.422-1.173-1.422-2.126 0-0.32 0.065-0.624 0.183-0.901l-0.006 0.015-3.389-3.405-8.98 8.974c-0.348 0.351-0.562 0.834-0.562 1.368s0.215 1.017 0.563 1.368l13.096 13.092c0.349 0.35 0.832 0.566 1.366 0.566s1.016-0.216 1.366-0.566l13.034-13.034c0.35-0.349 0.567-0.833 0.567-1.366s-0.217-1.017-0.567-1.366l-0-0z">
+                        </path>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">Git</h3>
+                        <p class="fw-bold text-light-emphasis">Extensos conocimientos y Maestría (soy cra).</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="60" fill="#212529" class="bi bi-github me-4"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">GitHub</h3>
+                        <p class="fw-bold text-light-emphasis">Tengo una cuenta.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                    <svg height="80" viewBox="0 0 20 20" fill="#212529" class="bi me-4"
+                        xmlns="http://www.w3.org/2000/svg">
+                        </defs>
+                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7599.000000)"
+                                fill="#000000">
+                                <g id="icons" transform="translate(56.000000, 160.000000)">
+                                    <path
+                                        d="M296.744,7457.45798 C296.262,7457.45798 295.872,7457.06594 295.872,7456.58142 C295.872,7456.0969 296.262,7455.70587 296.744,7455.70587 C297.226,7455.70587 297.616,7456.0969 297.616,7456.58142 C297.616,7457.06594 297.226,7457.45798 296.744,7457.45798 M294.072,7459 C299.15,7459 298.833,7456.78649 298.833,7456.78649 L298.827,7454.49357 L293.982,7454.49357 L293.982,7453.80499 L300.751,7453.80499 C300.751,7453.80499 304,7454.17591 304,7449.02614 C304,7443.87636 301.165,7444.0583 301.165,7444.0583 L299.472,7444.0583 L299.472,7446.44873 C299.472,7446.44873 299.563,7449.29855 296.682,7449.29855 L291.876,7449.29855 C291.876,7449.29855 289.176,7449.25533 289.176,7451.9222 L289.176,7456.33112 C289.176,7456.33112 288.766,7459 294.072,7459 M291.257,7440.54202 C291.739,7440.54202 292.128,7440.93406 292.128,7441.41858 C292.128,7441.9031 291.739,7442.29413 291.257,7442.29413 C290.775,7442.29413 290.385,7441.9031 290.385,7441.41858 C290.385,7440.93406 290.775,7440.54202 291.257,7440.54202 M293.928,7439 C288.851,7439 289.168,7441.21351 289.168,7441.21351 L289.174,7443.50643 L294.019,7443.50643 L294.019,7444.19501 L287.249,7444.19501 C287.249,7444.19501 284,7443.82409 284,7448.97386 C284,7454.12364 286.836,7453.9417 286.836,7453.9417 L288.528,7453.9417 L288.528,7451.55127 C288.528,7451.55127 288.437,7448.70145 291.319,7448.70145 L296.124,7448.70145 C296.124,7448.70145 298.824,7448.74467 298.824,7446.0778 L298.824,7441.66888 C298.824,7441.66888 299.234,7439 293.928,7439">
+                                    </path>
+                                </g>
+                            </g>
+                        </g>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">Python</h3>
+                        <p class="fw-bold text-light-emphasis">Sé analizar un texto caracter por caracter.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start"> <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="1.75em" height="1.75em" aria-hidden="true">
+                        <use xlink:href="#home"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">HTML</h3>
+                        <p class="fw-bold text-light-emphasis">Con que te pensas que estoy haciendo esto.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start"> <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="1.75em" height="1.75em" aria-hidden="true">
+                        <use xlink:href="#speedometer2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">Bootstrap</h3>
+                        <p class="fw-bold text-light-emphasis">Lo aprendí a usar ayer.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start"> <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="1.75em" height="1.75em" aria-hidden="true">
+                        <use xlink:href="#toggles2"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">React</h3>
+                        <p class="fw-bold text-light-emphasis">Todavía no sé pero quiero aprender.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start"> <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="1.75em" height="1.75em" aria-hidden="true">
+                        <use xlink:href="#geo-fill"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">Haskell</h3>
+                        <p class="fw-bold text-light-emphasis">No sirve para nada.</p>
+                    </div>
+                </div>
+                <div class="col d-flex align-items-start"> <svg class="bi text-body-secondary flex-shrink-0 me-3"
+                        width="1.75em" height="1.75em" aria-hidden="true">
+                        <use xlink:href="#tools"></use>
+                    </svg>
+                    <div>
+                        <h3 class="fw-bold mb-0 fs-4 text-light">SQL</h3>
+                        <p class="fw-bold text-light-emphasis">Muy bueno soy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <!-- Queda para después -->
     <!-- Proyectos -->
+    <section id="projects">
 
+    </section>
+
+    <!-- Queda para después -->
     <!-- Contacto -->
+    <section id="contact">
+
+    </section>
 
     <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+                <div class="col-md-4 d-flex align-items-center"> 
+                    <span class="mb-3 mb-md-0 text-light-emphasis fw-bold">© 2026 Mateo Montovani</span> 
+                </div>
+            </footer>
+        </div>
+    </section>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
